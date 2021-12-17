@@ -1,0 +1,9 @@
+extends: relaxed
+
+rules:
+  empty-lines:
+    max-end: 3
+  indentation:
+    spaces: consistent
+    indent-sequences: whatever
+  line-length: disable
