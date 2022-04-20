@@ -1,1 +1,13 @@
 * @answerbook/release-engineering
+
+versions/wave2.mk @answerbook/infrastructure
+deployment/kubernetes/wave2.yaml.envsubst @answerbook/infrastructure
+
+versions/wave3.mk @answerbook/infrastructure
+deployment/kubernetes/wave3.yaml.envsubst @answerbook/infrastructure
+
+versions/wave4.mk @answerbook/infrastructure
+deployment/kubernetes/wave4.yaml.envsubst @answerbook/infrastructure
+
+versions/wave5.mk @answerbook/infra-eu
+deployment/kubernetes/wave5.yaml.envsubst @answerbook/infra-eu
