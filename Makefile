@@ -26,7 +26,9 @@ BUILD_ARTIFACTS := $(wildcard $(BUILD_DIR)/*.yaml.envsubst)
 RELEASE_ARTIFACTS := $(patsubst $(BUILD_DIR)/%.envsubst, $(RELEASE_DIR)/%, $(BUILD_ARTIFACTS))
 RELEASE_VERSION := $(BUILD_DATESTAMP)
 
-include versions.mk
+
+VERSIONS_FILES = $(wildcard versions/wave*.mk)
+include $(VERSIONS_FILES)
 
 export
 
